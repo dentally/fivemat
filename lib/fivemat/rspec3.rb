@@ -34,7 +34,7 @@ module Fivemat
 
     def example_group_started(event)
       if @group_level.zero?
-        output.print "#{event.group.description} "
+        output.print "#{event.group.file_path} "
         @start_time = Time.now
       end
 
